@@ -8,9 +8,6 @@ const generateToken = (id) => {
   });
 };
 
-// @desc    Register a new user
-// @route   POST /api/auth/register
-// @access  Public
 const register = async (req, res) => {
   try {
     const errors = validationResult(req);
@@ -47,9 +44,7 @@ const register = async (req, res) => {
   }
 };
 
-// @desc    Login user
-// @route   POST /api/auth/login
-// @access  Public
+
 const login = async (req, res) => {
   try {
     const errors = validationResult(req);
@@ -95,9 +90,7 @@ const login = async (req, res) => {
   }
 };
 
-// @desc    Get logged-in user profile
-// @route   GET /api/auth/me
-// @access  Private
+
 const getMe = async (req, res) => {
   try {
     return res.status(200).json({
