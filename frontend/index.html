@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>User Management System</h1>
+      <p>Full Stack CRUD Application</p>
+    </header>
+
+    <section class="card">
+      <h2>Create New User</h2>
+
+      <form id="userForm">
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Full Name" required />
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" placeholder="Email Address" required />
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="password" placeholder="Password" required />
+        </div>
+
+        <button type="submit">Add User</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Users List</h2>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="usersTable"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
